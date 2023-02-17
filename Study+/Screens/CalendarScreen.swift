@@ -22,7 +22,7 @@ struct CalendarScreen: View {
                 Button{
                     router.change(to: .progress)
                 } label: {
-                    Text("Switch to Progress")
+                    Text("Switch to ")
                 }
             }
             
