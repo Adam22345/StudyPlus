@@ -4,7 +4,7 @@
 //
 //  Created by Adam Mohsin on 15/02/2023.
 //
-
+//Timer for studying
 import SwiftUI
 
 struct StudyTimer: View {
