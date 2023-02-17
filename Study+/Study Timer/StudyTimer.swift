@@ -35,7 +35,7 @@ struct StudyTimer: View {
             HStack(spacing: 60){
                 
                 VStack(spacing: 5) {
-                    Text("Begin")
+                    Text("start")
                         .opacity(0.7)
                     
                     Text(Date(),format:.dateTime.weekday().hour().minute().second())
