@@ -31,7 +31,7 @@ struct StudyTimer: View {
                 .cornerRadius(20)
             
             TimeTracker()
-            
+            //Keeps Track of timer settings
             HStack(spacing: 60){
                 
                 VStack(spacing: 5) {

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-
+//App is executed here
 enum Screen{
     case calendar
     case progress
