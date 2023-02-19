@@ -8,6 +8,26 @@
 import SwiftUI
 
 struct StudyTimer: View {
+   @StateObject var studyOrganiser = StudyOrganiser()
+    
+    var title: String {
+        switch studyOrganiser.startStudy {
+            
+        case .negative:
+            return "start study "
+        
+        
+        case .study:
+            return "You are Studying now "
+            
+        
+        case .finished:
+            return "Study Finished "
+            
+            
+            
+        }
+    }
     var body: some View {
         ZStack{
             
@@ -17,13 +37,14 @@ struct StudyTimer: View {
     }
     
     var timer:some View {
-        VStack{
+        
+         VStack(spacing:40){
             
-            Text("Start Studying!")
+            Text(title)
                 .font(.headline)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 0.1112673828, blue: 0.05611023233, alpha: 1)))
             
-            Text("2 hours")
+             Text(studyOrganiser.studySessions.rawValue)
                 .fontWeight(.bold)
                 .padding(.horizontal,24)
                 .padding(.vertical,8)
@@ -31,30 +52,32 @@ struct StudyTimer: View {
                 .cornerRadius(20)
             
             TimeTracker()
+                 .environmentObject(studyOrganiser)
             //Keeps Track of timer settings
             HStack(spacing: 60){
                 
                 VStack(spacing: 5) {
-                    Text("start")
+                    Text(studyOrganiser.startStudy == .negative ? "Start" : "Started")
                         .opacity(0.7)
                     
-                    Text(Date(),format:.dateTime.weekday().hour().minute().second())
+                    Text(studyOrganiser.startingtime,format:.dateTime.weekday().hour().minute().second())
                         .fontWeight(.bold)
                 }
                 VStack(spacing: 5) {
-                    Text("End")
+                    Text(studyOrganiser.startStudy == .negative ? "Finish" : "Finished")
                         .opacity(0.7)
                     
-                    Text(Date().addingTimeInterval(16),format:.dateTime.weekday().hour().minute().second())
+                    Text(studyOrganiser.finishingtime,format:.dateTime.weekday().hour().minute().second())
                         .fontWeight(.bold)
                 }
                 
             }
             
             Button {
+                studyOrganiser.startStudying()
                 
             } label: {
-                Text("Start Studying")
+                Text(studyOrganiser.startStudy == .study ? "Finish Studying": "Start Studying")
                     .font(.title3)
                     .fontWeight(.bold)
                     .padding(.horizontal,24)

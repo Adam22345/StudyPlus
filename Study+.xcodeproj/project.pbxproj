@@ -33,6 +33,7 @@
 		66440EA2299C2AD4002DCF03 /* SubjectDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440EA1299C2AD4002DCF03 /* SubjectDay.swift */; };
 		66440EAA299C3DE2002DCF03 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */; };
 		664C7F5F299FCFFF00C218C5 /* Progress Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C7F5E299FCFFF00C218C5 /* Progress Screen.swift */; };
+		6676326429A25FE300A27DB9 /* StudyOrganiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676326329A25FE300A27DB9 /* StudyOrganiser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		66440EA1299C2AD4002DCF03 /* SubjectDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDay.swift; sourceTree = "<group>"; };
 		66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartScreen.storyboard; sourceTree = "<group>"; };
 		664C7F5E299FCFFF00C218C5 /* Progress Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress Screen.swift"; sourceTree = "<group>"; };
+		6676326329A25FE300A27DB9 /* StudyOrganiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOrganiser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				66108DE7299D5CAE00A0A4CF /* StudyTimer.swift */,
 				66108DE9299D5FE100A0A4CF /* TimeTracker.swift */,
+				6676326329A25FE300A27DB9 /* StudyOrganiser.swift */,
 			);
 			path = "Study Timer";
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				66108DEA299D5FE100A0A4CF /* TimeTracker.swift in Sources */,
 				66440E92299C0119002DCF03 /* SubjectStructure.swift in Sources */,
 				66440E39299BC41A002DCF03 /* CalendarScreen.swift in Sources */,
+				6676326429A25FE300A27DB9 /* StudyOrganiser.swift in Sources */,
 				66440E0F299BC292002DCF03 /* Study_App.swift in Sources */,
 				664C7F5F299FCFFF00C218C5 /* Progress Screen.swift in Sources */,
 				66440E9E299C20D7002DCF03 /* SubjectRow.swift in Sources */,
