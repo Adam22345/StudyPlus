@@ -8,19 +8,27 @@
 import Foundation
 
 enum StartStudy{
+    
+    
     case negative
     case study
     case finished
 }
 
 enum StudySessions: String{
+    
+   
     case short = "1-2 hours"
     case medium = "2-3 hours"
     case long = "4-5 hours (Longer Not Recommended)"
     
     
     var studyhours : Double{
+        
+        
         switch self {
+        
+            
         case .short:
             return 2
         case .medium:
@@ -82,7 +90,7 @@ class StudyOrganiser: ObservableObject{
         
         print("timeset",timeset.formatted(.dateTime.month().day().hour().second()))
         
-        // this one times 60 after testing 
+        // this one times 60 after testing
         startingtime = timeset
         finishingtime = timeset.addingTimeInterval(StudySessions.short.studyhours * 60 * 60 )
         

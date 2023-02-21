@@ -2,7 +2,7 @@
 //  Study_App.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  Created by Adam Mohsin on 11/02/2023.
 //
 
 import SwiftUI
@@ -17,6 +17,7 @@ final class manageTabs: ObservableObject {
     
     @Published var screen: Screen = .calendar
     
+    
     func change (to screen: Screen) {
         self.screen = screen
     }
@@ -24,16 +25,52 @@ final class manageTabs: ObservableObject {
 
 
 @main
-struct Study_App: App {
-    
+struct Study: App {
+    @StateObject private var store = SubjectStorage()
     @StateObject var theSubjects = SubjectCreate(view: true)
-
+    
+    
     var body: some Scene {
         WindowGroup {
-            ScheduleListScreen()
-                .environmentObject(theSubjects)
+            
+            
+            NavigationView {
+                
+                
+                
+                
+                
+                ScheduleView(subjects: $store.subjects) {
+                    SubjectStorage.store(subjects: store.subjects) { result in
+                        if case .failure(let error) = result {
+                            fatalError(error.localizedDescription)
+                        }
+                        
+                    }
+                    
+                }
+                
+                
+            
+            
+        }
+            ScheduleListScreen(subjects: $store.subjects) //Needs to be fixed 
+            .environmentObject(theSubjects)
+           
+            .onAppear {
+                SubjectStorage.load { result in
+                    switch result {
+                    case .failure(let error):
+                        fatalError(error.localizedDescription)
+                    case .success(let subjects):
+                        store.subjects = subjects
+                    }
+                }
+            }
         }
     }
+}
+
     
     
     
@@ -83,4 +120,4 @@ struct Study_App: App {
        // }
  
 //}
-}
+

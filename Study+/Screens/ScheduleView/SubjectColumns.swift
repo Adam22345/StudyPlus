@@ -10,21 +10,24 @@ import SwiftUI
 struct SubjectColumns: View {
     @EnvironmentObject var theSubjects: SubjectCreate
     @State private var subjectKind: SubjectInfo?
+    @Environment(\.scenePhase) private var scenePhase
+   
+    
     var body: some View {
         NavigationStack {
             List {
                 ForEach(theSubjects.subjects.sorted {$0.date < $1.date }) { subject in
                     SubjectHeading(subject: subject, subjectKind: $subjectKind)
-                    .swipeActions {
-                        Button(role: .destructive) {
-                            theSubjects.delete(subject)
-                        } label: {
-                            Image(systemName: "trash")
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                theSubjects.delete(subject)
+                            } label: {
+                                Image(systemName: "trash")
+                            }
                         }
-                    }
                 }
             }
-            .navigationTitle("Calendar Events")
+            .navigationTitle("Schedule")
             .sheet(item: $subjectKind) { $0 }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -35,15 +38,26 @@ struct SubjectColumns: View {
                             .imageScale(.medium)
                     }
                 }
+                
             }
+            
         }
+  
+            
+        }
+        
     }
-}
+    
+//    struct EventsListView_Previews: PreviewProvider {
+//        static var previews: some View {
+            
+//            SubjectColumns(subjects: .constant(Subject.sampleSubjects), saveAction:{})
+            
+            
+//                .environmentObject(SubjectColumns(view: true))
+//        }
+        
+        
+ //   }
 
-//struct EventsListView_Previews: PreviewProvider {
-  //  static var previews: some View {
-    //    EventsListView()
-      //      .environmentObject(EventStore(preview: true))
-   // }
-//}
 

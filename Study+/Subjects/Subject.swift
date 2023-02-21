@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Subject: Identifiable{
+struct Subject: Identifiable, Codable{
     
-    enum SubjectKind: String, CaseIterable,Identifiable {
+    enum SubjectKind: String, CaseIterable,Identifiable, Codable {
         case maths, science, computer, english, generic
         var id: String {
             self.rawValue
