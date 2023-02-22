@@ -9,36 +9,37 @@ struct SubjectView1: View {
     
     var body: some View {
         
-        
-        
-        VStack(alignment: .leading) {
-            Text(subject.title)
-                .accessibilityAddTraits(.isHeader)
-                .font(.headline)
-            Spacer()
-            HStack {
-                Label("\(subject.subjectNames.count)", systemImage: "person.3")
-                    .accessibilityLabel("\(subject.subjectNames.count) attendees")
-                Spacer()
-               
+        NavigationStack{
+            ZStack{
                 
+                VStack(alignment: .leading) {
+                    Text(subject.title)
+                        .accessibilityAddTraits(.isHeader)
+                        .font(.headline)
+                    Spacer()
+                    HStack {
+                        Label("\(subject.subjectNames.count)", systemImage: "person.3")
+                            .accessibilityLabel("\(subject.subjectNames.count) attendees")
+                        Spacer()
+                        
+                        
+                        
+                        
+                        
+                        
+                        Label("\(subject.lengthInMinutes)", systemImage: "clock")
+                            .accessibilityLabel("\(subject.lengthInMinutes) minute meeting")
+                        
+                        
+                    }
+                    .font(.caption)
+                }
+                .padding()
                 
-                
-                
-                
-                Label("\(subject.lengthInMinutes)", systemImage: "clock")
-                    .accessibilityLabel("\(subject.lengthInMinutes) minute meeting")
-                    
                 
             }
-            .font(.caption)
+            
         }
-        .padding()
-      
-        
-     
-        
-        
         
     }
     

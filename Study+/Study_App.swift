@@ -32,30 +32,32 @@ struct Study: App {
     
     var body: some Scene {
         WindowGroup {
+          
+                
+               
             
+    
             
-            NavigationView {
+            NavigationView{
+                ScheduleListScreen(subjects: $store.subjects) //Needs to be fixed
+                    .environmentObject(theSubjects)
                 
                 
                 
                 
                 
-                ScheduleView(subjects: $store.subjects) {
+                
+                ScheduleView(subjects: $store.subjects){
                     SubjectStorage.store(subjects: store.subjects) { result in
                         if case .failure(let error) = result {
                             fatalError(error.localizedDescription)
+                            
+                            
                         }
-                        
                     }
-                    
                 }
-                
-                
-            
-            
-        }
-            ScheduleListScreen(subjects: $store.subjects) //Needs to be fixed 
-            .environmentObject(theSubjects)
+            }
+           
            
             .onAppear {
                 SubjectStorage.load { result in
@@ -66,6 +68,8 @@ struct Study: App {
                         store.subjects = subjects
                     }
                 }
+                
+                
             }
         }
     }

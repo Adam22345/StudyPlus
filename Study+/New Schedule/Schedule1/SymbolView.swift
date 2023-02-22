@@ -10,15 +10,17 @@ struct SymbolView: View {
     let symbol: Subject1
     
     var body: some View {
-        ZStack {
+        NavigationStack{
+            ZStack {
+                
+                RoundedRectangle(cornerRadius: 4)
+                
+                Label(symbol.subjectEmoji, systemImage: "")
+                    .padding(4)
+            }
             
-            RoundedRectangle(cornerRadius: 4)
-             
-            Label(symbol.subjectEmoji, systemImage: "")
-                .padding(4)
+            .fixedSize(horizontal: false, vertical: true)
         }
-        
-        .fixedSize(horizontal: false, vertical: true)
     }
 }
 

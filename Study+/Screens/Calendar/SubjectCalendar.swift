@@ -14,7 +14,7 @@ struct SubjectCalendar: View {
     @State private var subjectKind: SubjectInfo?
     
     var body: some View {
-        NavigationStack {
+        
             ScrollView {
                 CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture),
                              subjectCreate: subjectCreate,
@@ -44,7 +44,7 @@ struct SubjectCalendar: View {
                 .navigationTitle("Calendar View")
         }
     }
-}
+
 
 struct EventsCalendarView_Previews: PreviewProvider {
     static var previews: some View {

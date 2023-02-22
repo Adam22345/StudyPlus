@@ -12,54 +12,77 @@ struct ScheduleView: View {
     let saveAction: ()->Void
     
     var body: some View {
-       
-        
-        
-        List { 
-            ForEach($subjects) { $subject in
-                NavigationLink(destination: InfoView(subject: $subject)) {
-                    SubjectView1(subject: subject)
-                }
-              
-            }
-            .onDelete { indices in
-                            subjects.remove(atOffsets: indices)}
-        }
-        .navigationTitle("Schedule")
-        .toolbar {
-            Button(action: {
-                isPresentingNewScrumView = true
-            }) {
-                Image(systemName: "plus.circle.fill")
-            }
-            .accessibilityLabel("New Subject")
-        }
-        .sheet(isPresented: $isPresentingNewScrumView) {
-            NavigationView {
-                InfoEditView(data: $newScrumData)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Dismiss") {
-                                isPresentingNewScrumView = false
-                                newScrumData = CurrentSchedule.Data()
-                            }
-                        }
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Add") {
-                                let newSubject = CurrentSchedule(data: newScrumData)
-                                subjects.append(newSubject)
-                                isPresentingNewScrumView = false
-                                newScrumData = CurrentSchedule.Data()
-                            }
-                        }
+        NavigationStack{
+            
+            Text("Tilt Phone To side to View Schedule ")
+            
+            
+            
+            List {
+                ForEach($subjects) { $subject in
+                    NavigationLink(destination: InfoView(subject: $subject)) {
+                        SubjectView1(subject: subject)
                     }
+                }
+                .onDelete { indices in
+                    subjects.remove(atOffsets: indices)}
             }
-        }
-        .onChange(of: scenePhase) { phase in
-            if phase == .inactive { saveAction() }
+            
+            
+            .navigationTitle("Schedule")
+            
+            .toolbar {
+                Button(action: {
+                    isPresentingNewScrumView = true
+                }) {
+                    Image(systemName: "plus.circle.fill")
+                }
+                .accessibilityLabel("New Subject")
+            }
+            
+            .sheet(isPresented: $isPresentingNewScrumView) {
+                NavigationView {
+                    InfoEditView(data: $newScrumData)
+                        .toolbar {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Dismiss") {
+                                    isPresentingNewScrumView = false
+                                    newScrumData = CurrentSchedule.Data()
+                                }
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Add") {
+                                    let newSubject = CurrentSchedule(data: newScrumData)
+                                    subjects.append(newSubject)
+                                    isPresentingNewScrumView = false
+                                    newScrumData = CurrentSchedule.Data()
+                                }
+                            }
+                        }
+                }
+            }
+            
+            .onChange(of: scenePhase) { phase in
+                if phase == .inactive { saveAction() }
+            }
         }
     }
-}
+        
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
