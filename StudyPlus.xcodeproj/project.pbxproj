@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		66108DE8299D5CAE00A0A4CF /* StudyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66108DE7299D5CAE00A0A4CF /* StudyTimer.swift */; };
 		66108DEA299D5FE100A0A4CF /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66108DE9299D5FE100A0A4CF /* TimeTracker.swift */; };
+		6631811229DC7E8700BE9652 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631811129DC7E8700BE9652 /* NoteView.swift */; };
 		66440E0F299BC292002DCF03 /* Study_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E0E299BC292002DCF03 /* Study_App.swift */; };
 		66440E13299BC296002DCF03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66440E12299BC296002DCF03 /* Assets.xcassets */; };
 		66440E16299BC296002DCF03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66440E15299BC296002DCF03 /* Preview Assets.xcassets */; };
 		66440E20299BC296002DCF03 /* Study_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E1F299BC296002DCF03 /* Study_Tests.swift */; };
 		66440E2A299BC296002DCF03 /* Study_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E29299BC296002DCF03 /* Study_UITests.swift */; };
 		66440E2C299BC296002DCF03 /* Study_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E2B299BC296002DCF03 /* Study_UITestsLaunchTests.swift */; };
-		66440E3F299BD56E002DCF03 /* ScheduleListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */; };
+		66440E3F299BD56E002DCF03 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E3E299BD56E002DCF03 /* Tabs.swift */; };
 		66440E42299BD9EC002DCF03 /* SubjectCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E41299BD9EC002DCF03 /* SubjectCreate.swift */; };
 		66440E46299BE178002DCF03 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E45299BE178002DCF03 /* Subject.swift */; };
 		66440E86299BF9B6002DCF03 /* DateExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E85299BF9B6002DCF03 /* DateExtra.swift */; };
@@ -23,8 +24,8 @@
 		66440E90299C0003002DCF03 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E8F299C0003002DCF03 /* SubjectView.swift */; };
 		66440E92299C0119002DCF03 /* SubjectStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E91299C0119002DCF03 /* SubjectStructure.swift */; };
 		66440E94299C05B5002DCF03 /* SubjectInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E93299C05B5002DCF03 /* SubjectInfo.swift */; };
-		66440E96299C07CB002DCF03 /* SubjectColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E95299C07CB002DCF03 /* SubjectColumns.swift */; };
-		66440E99299C1BD4002DCF03 /* SubjectCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E98299C1BD4002DCF03 /* SubjectCalendar.swift */; };
+		66440E96299C07CB002DCF03 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E95299C07CB002DCF03 /* ScheduleView.swift */; };
+		66440E99299C1BD4002DCF03 /* CalendarViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E98299C1BD4002DCF03 /* CalendarViewer.swift */; };
 		66440E9C299C1F66002DCF03 /* SubjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E9B299C1F66002DCF03 /* SubjectList.swift */; };
 		66440E9E299C20D7002DCF03 /* SubjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E9D299C20D7002DCF03 /* SubjectRow.swift */; };
 		66440EA0299C2660002DCF03 /* CalendarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E9F299C2660002DCF03 /* CalendarPage.swift */; };
@@ -40,7 +41,6 @@
 		66D2D3A129A544BD0011D820 /* InfoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39B29A544BD0011D820 /* InfoEditView.swift */; };
 		66D2D3A229A544BD0011D820 /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39C29A544BD0011D820 /* SymbolView.swift */; };
 		66D2D3A329A544BD0011D820 /* EmojiPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39D29A544BD0011D820 /* EmojiPicker.swift */; };
-		66D2D3A429A544BD0011D820 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39E29A544BD0011D820 /* ScheduleView.swift */; };
 		66D2D3A529A544BD0011D820 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39F29A544BD0011D820 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,16 +64,17 @@
 /* Begin PBXFileReference section */
 		66108DE7299D5CAE00A0A4CF /* StudyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTimer.swift; sourceTree = "<group>"; };
 		66108DE9299D5FE100A0A4CF /* TimeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
-		66440E0B299BC292002DCF03 /* Study+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Study+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6631811129DC7E8700BE9652 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		66440E0B299BC292002DCF03 /* StudyPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66440E0E299BC292002DCF03 /* Study_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_App.swift; sourceTree = "<group>"; };
 		66440E12299BC296002DCF03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66440E15299BC296002DCF03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		66440E1B299BC296002DCF03 /* Study+Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Study+Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66440E1B299BC296002DCF03 /* StudyPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66440E1F299BC296002DCF03 /* Study_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_Tests.swift; sourceTree = "<group>"; };
-		66440E25299BC296002DCF03 /* Study+UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Study+UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66440E25299BC296002DCF03 /* StudyPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudyPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66440E29299BC296002DCF03 /* Study_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_UITests.swift; sourceTree = "<group>"; };
 		66440E2B299BC296002DCF03 /* Study_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListScreen.swift; sourceTree = "<group>"; };
+		66440E3E299BD56E002DCF03 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		66440E41299BD9EC002DCF03 /* SubjectCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCreate.swift; sourceTree = "<group>"; };
 		66440E45299BE178002DCF03 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		66440E85299BF9B6002DCF03 /* DateExtra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtra.swift; sourceTree = "<group>"; };
@@ -81,8 +82,8 @@
 		66440E8F299C0003002DCF03 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		66440E91299C0119002DCF03 /* SubjectStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectStructure.swift; sourceTree = "<group>"; };
 		66440E93299C05B5002DCF03 /* SubjectInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectInfo.swift; sourceTree = "<group>"; };
-		66440E95299C07CB002DCF03 /* SubjectColumns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectColumns.swift; sourceTree = "<group>"; };
-		66440E98299C1BD4002DCF03 /* SubjectCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCalendar.swift; sourceTree = "<group>"; };
+		66440E95299C07CB002DCF03 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		66440E98299C1BD4002DCF03 /* CalendarViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewer.swift; sourceTree = "<group>"; };
 		66440E9B299C1F66002DCF03 /* SubjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectList.swift; sourceTree = "<group>"; };
 		66440E9D299C20D7002DCF03 /* SubjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRow.swift; sourceTree = "<group>"; };
 		66440E9F299C2660002DCF03 /* CalendarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPage.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		66D2D39B29A544BD0011D820 /* InfoEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoEditView.swift; sourceTree = "<group>"; };
 		66D2D39C29A544BD0011D820 /* SymbolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
 		66D2D39D29A544BD0011D820 /* EmojiPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiPicker.swift; sourceTree = "<group>"; };
-		66D2D39E29A544BD0011D820 /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		66D2D39F29A544BD0011D820 /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,7 +140,7 @@
 		66440E02299BC292002DCF03 = {
 			isa = PBXGroup;
 			children = (
-				66440E0D299BC292002DCF03 /* Study+ */,
+				66440E0D299BC292002DCF03 /* StudyPlus */,
 				66440E1E299BC296002DCF03 /* Study+Tests */,
 				66440E28299BC296002DCF03 /* Study+UITests */,
 				66440E0C299BC292002DCF03 /* Products */,
@@ -150,18 +150,18 @@
 		66440E0C299BC292002DCF03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66440E0B299BC292002DCF03 /* Study+.app */,
-				66440E1B299BC296002DCF03 /* Study+Tests.xctest */,
-				66440E25299BC296002DCF03 /* Study+UITests.xctest */,
+				66440E0B299BC292002DCF03 /* StudyPlus.app */,
+				66440E1B299BC296002DCF03 /* StudyPlusTests.xctest */,
+				66440E25299BC296002DCF03 /* StudyPlusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66440E0D299BC292002DCF03 /* Study+ */ = {
+		66440E0D299BC292002DCF03 /* StudyPlus */ = {
 			isa = PBXGroup;
 			children = (
 				66440E0E299BC292002DCF03 /* Study_App.swift */,
-				66D2D38B29A542B40011D820 /* New Schedule */,
+				66D2D38B29A542B40011D820 /* Notes */,
 				66440E40299BD93F002DCF03 /* Subjects */,
 				66440E3D299BD08B002DCF03 /* Screens */,
 				66108DE4299D5C7300A0A4CF /* Study Timer */,
@@ -170,7 +170,7 @@
 				66440E12299BC296002DCF03 /* Assets.xcassets */,
 				66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */,
 			);
-			path = "Study+";
+			path = StudyPlus;
 			sourceTree = "<group>";
 		};
 		66440E14299BC296002DCF03 /* Preview Content */ = {
@@ -230,7 +230,7 @@
 		66440E87299BFCBF002DCF03 /* ScheduleView */ = {
 			isa = PBXGroup;
 			children = (
-				66440E95299C07CB002DCF03 /* SubjectColumns.swift */,
+				66440E95299C07CB002DCF03 /* ScheduleView.swift */,
 				66440E8A299BFD5C002DCF03 /* SubjectHeading.swift */,
 			);
 			path = ScheduleView;
@@ -249,7 +249,7 @@
 		66440E97299C1B74002DCF03 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				66440E98299C1BD4002DCF03 /* SubjectCalendar.swift */,
+				66440E98299C1BD4002DCF03 /* CalendarViewer.swift */,
 				66440E9F299C2660002DCF03 /* CalendarPage.swift */,
 				66440EA1299C2AD4002DCF03 /* SubjectDay.swift */,
 			);
@@ -259,33 +259,33 @@
 		66440E9A299C1F32002DCF03 /* Tab View */ = {
 			isa = PBXGroup;
 			children = (
-				66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */,
+				66440E3E299BD56E002DCF03 /* Tabs.swift */,
 				66440E9B299C1F66002DCF03 /* SubjectList.swift */,
 				66440E9D299C20D7002DCF03 /* SubjectRow.swift */,
 			);
 			path = "Tab View";
 			sourceTree = "<group>";
 		};
-		66D2D38B29A542B40011D820 /* New Schedule */ = {
+		66D2D38B29A542B40011D820 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				66D2D39029A544410011D820 /* Schedule1 */,
+				66D2D39029A544410011D820 /* New Notes */,
 				66D2D39129A5446C0011D820 /* Components */,
 			);
-			path = "New Schedule";
+			path = Notes;
 			sourceTree = "<group>";
 		};
-		66D2D39029A544410011D820 /* Schedule1 */ = {
+		66D2D39029A544410011D820 /* New Notes */ = {
 			isa = PBXGroup;
 			children = (
 				66D2D39D29A544BD0011D820 /* EmojiPicker.swift */,
 				66D2D39B29A544BD0011D820 /* InfoEditView.swift */,
 				66D2D39F29A544BD0011D820 /* InfoView.swift */,
-				66D2D39E29A544BD0011D820 /* ScheduleView.swift */,
+				6631811129DC7E8700BE9652 /* NoteView.swift */,
 				66D2D39A29A544BD0011D820 /* SubjectView1.swift */,
 				66D2D39C29A544BD0011D820 /* SymbolView.swift */,
 			);
-			path = Schedule1;
+			path = "New Notes";
 			sourceTree = "<group>";
 		};
 		66D2D39129A5446C0011D820 /* Components */ = {
@@ -302,9 +302,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		66440E0A299BC292002DCF03 /* Study+ */ = {
+		66440E0A299BC292002DCF03 /* StudyPlus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66440E2F299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+" */;
+			buildConfigurationList = 66440E2F299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlus" */;
 			buildPhases = (
 				66440E07299BC292002DCF03 /* Sources */,
 				66440E08299BC292002DCF03 /* Frameworks */,
@@ -314,14 +314,14 @@
 			);
 			dependencies = (
 			);
-			name = "Study+";
+			name = StudyPlus;
 			productName = "Study+";
-			productReference = 66440E0B299BC292002DCF03 /* Study+.app */;
+			productReference = 66440E0B299BC292002DCF03 /* StudyPlus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		66440E1A299BC296002DCF03 /* Study+Tests */ = {
+		66440E1A299BC296002DCF03 /* StudyPlusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66440E32299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+Tests" */;
+			buildConfigurationList = 66440E32299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlusTests" */;
 			buildPhases = (
 				66440E17299BC296002DCF03 /* Sources */,
 				66440E18299BC296002DCF03 /* Frameworks */,
@@ -332,14 +332,14 @@
 			dependencies = (
 				66440E1D299BC296002DCF03 /* PBXTargetDependency */,
 			);
-			name = "Study+Tests";
+			name = StudyPlusTests;
 			productName = "Study+Tests";
-			productReference = 66440E1B299BC296002DCF03 /* Study+Tests.xctest */;
+			productReference = 66440E1B299BC296002DCF03 /* StudyPlusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		66440E24299BC296002DCF03 /* Study+UITests */ = {
+		66440E24299BC296002DCF03 /* StudyPlusUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66440E35299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+UITests" */;
+			buildConfigurationList = 66440E35299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlusUITests" */;
 			buildPhases = (
 				66440E21299BC296002DCF03 /* Sources */,
 				66440E22299BC296002DCF03 /* Frameworks */,
@@ -350,9 +350,9 @@
 			dependencies = (
 				66440E27299BC296002DCF03 /* PBXTargetDependency */,
 			);
-			name = "Study+UITests";
+			name = StudyPlusUITests;
 			productName = "Study+UITests";
-			productReference = 66440E25299BC296002DCF03 /* Study+UITests.xctest */;
+			productReference = 66440E25299BC296002DCF03 /* StudyPlusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -378,7 +378,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 66440E06299BC292002DCF03 /* Build configuration list for PBXProject "Study+" */;
+			buildConfigurationList = 66440E06299BC292002DCF03 /* Build configuration list for PBXProject "StudyPlus" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -391,9 +391,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66440E0A299BC292002DCF03 /* Study+ */,
-				66440E1A299BC296002DCF03 /* Study+Tests */,
-				66440E24299BC296002DCF03 /* Study+UITests */,
+				66440E0A299BC292002DCF03 /* StudyPlus */,
+				66440E1A299BC296002DCF03 /* StudyPlusTests */,
+				66440E24299BC296002DCF03 /* StudyPlusUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -430,16 +430,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66D2D3A429A544BD0011D820 /* ScheduleView.swift in Sources */,
 				66D2D39729A5448F0011D820 /* Timeline.swift in Sources */,
 				66D2D39629A5448F0011D820 /* SubjectStorage.swift in Sources */,
-				66440E96299C07CB002DCF03 /* SubjectColumns.swift in Sources */,
-				66440E99299C1BD4002DCF03 /* SubjectCalendar.swift in Sources */,
+				66440E96299C07CB002DCF03 /* ScheduleView.swift in Sources */,
+				66440E99299C1BD4002DCF03 /* CalendarViewer.swift in Sources */,
 				66440E9C299C1F66002DCF03 /* SubjectList.swift in Sources */,
 				66440E94299C05B5002DCF03 /* SubjectInfo.swift in Sources */,
 				66440EA0299C2660002DCF03 /* CalendarPage.swift in Sources */,
 				66D2D3A029A544BD0011D820 /* SubjectView1.swift in Sources */,
-				66440E3F299BD56E002DCF03 /* ScheduleListScreen.swift in Sources */,
+				66440E3F299BD56E002DCF03 /* Tabs.swift in Sources */,
 				66440E86299BF9B6002DCF03 /* DateExtra.swift in Sources */,
 				66440E8B299BFD5C002DCF03 /* SubjectHeading.swift in Sources */,
 				66108DEA299D5FE100A0A4CF /* TimeTracker.swift in Sources */,
@@ -456,6 +455,7 @@
 				66670CEE29A404A0009720A3 /* SubjectStore.swift in Sources */,
 				66D2D3A229A544BD0011D820 /* SymbolView.swift in Sources */,
 				66440E46299BE178002DCF03 /* Subject.swift in Sources */,
+				6631811229DC7E8700BE9652 /* NoteView.swift in Sources */,
 				66440E90299C0003002DCF03 /* SubjectView.swift in Sources */,
 				66D2D3A129A544BD0011D820 /* InfoEditView.swift in Sources */,
 				66440E42299BD9EC002DCF03 /* SubjectCreate.swift in Sources */,
@@ -484,12 +484,12 @@
 /* Begin PBXTargetDependency section */
 		66440E1D299BC296002DCF03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66440E0A299BC292002DCF03 /* Study+ */;
+			target = 66440E0A299BC292002DCF03 /* StudyPlus */;
 			targetProxy = 66440E1C299BC296002DCF03 /* PBXContainerItemProxy */;
 		};
 		66440E27299BC296002DCF03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66440E0A299BC292002DCF03 /* Study+ */;
+			target = 66440E0A299BC292002DCF03 /* StudyPlus */;
 			targetProxy = 66440E26299BC296002DCF03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -616,10 +616,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Study+/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9N87939XG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StudyPlus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -646,10 +647,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Study+/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 9N87939XG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = StudyPlus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -684,7 +686,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Study+.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Study+";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudyPlus";
 			};
 			name = Debug;
 		};
@@ -703,7 +705,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Study+.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Study+";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudyPlus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudyPlus";
 			};
 			name = Release;
 		};
@@ -744,7 +746,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		66440E06299BC292002DCF03 /* Build configuration list for PBXProject "Study+" */ = {
+		66440E06299BC292002DCF03 /* Build configuration list for PBXProject "StudyPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66440E2D299BC296002DCF03 /* Debug */,
@@ -753,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66440E2F299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+" */ = {
+		66440E2F299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66440E30299BC296002DCF03 /* Debug */,
@@ -762,7 +764,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66440E32299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+Tests" */ = {
+		66440E32299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66440E33299BC296002DCF03 /* Debug */,
@@ -771,7 +773,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66440E35299BC296002DCF03 /* Build configuration list for PBXNativeTarget "Study+UITests" */ = {
+		66440E35299BC296002DCF03 /* Build configuration list for PBXNativeTarget "StudyPlusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66440E36299BC296002DCF03 /* Debug */,

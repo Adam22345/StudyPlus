@@ -18,10 +18,10 @@ struct Study: App {
     var body: some Scene {
         WindowGroup {
           NavigationView{
-                ScheduleListScreen(subjects: $store.subjects)
+                Tabs(subjects: $store.subjects) //loads all the tabs of the App
                     .environmentObject(theSubjects)
                 
-                ScheduleView(subjects: $store.subjects){
+                NoteView(subjects: $store.subjects){
                     SubjectStorage.store(subjects: store.subjects) { result in
                         if case .failure(let error) = result {
                             fatalError(error.localizedDescription)

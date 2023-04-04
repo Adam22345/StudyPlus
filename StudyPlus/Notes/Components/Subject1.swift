@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-enum Subject1: String, CaseIterable, Identifiable, Codable {
+enum Subject1: String, CaseIterable, Identifiable, Codable { // using enum for choosing emojis
     case maths
     
     case science
@@ -16,7 +16,7 @@ enum Subject1: String, CaseIterable, Identifiable, Codable {
     case english
     
     case generic
-    var subjectEmoji: String {
+    var subjectEmoji: String { // the diffrent emojis being used in the app
         switch self {
         case .maths:
             return "➗"

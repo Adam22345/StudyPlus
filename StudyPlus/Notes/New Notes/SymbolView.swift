@@ -6,25 +6,19 @@
 //
 
 import SwiftUI
-
-struct SymbolView: View {
+struct SymbolView: View { // creates the emoji viewer for the when adding new notes
     let symbol: Subject1
-    
     var body: some View {
         NavigationStack{
             ZStack {
-                
                 RoundedRectangle(cornerRadius: 4)
-                
-                Label(symbol.subjectEmoji, systemImage: "")
+                Label(symbol.subjectEmoji, systemImage: "") //sets the emoji for the notes
                     .padding(4)
             }
-            
-            .fixedSize(horizontal: false, vertical: true)
+                    .fixedSize(horizontal: false, vertical: true)
         }
     }
 }
-
 struct ThemeView_Previews: PreviewProvider {
     static var previews: some View {
         SymbolView(symbol: .generic)

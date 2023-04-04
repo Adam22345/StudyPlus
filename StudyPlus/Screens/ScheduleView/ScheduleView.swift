@@ -1,5 +1,5 @@
 //
-//  SubjectColumns.swift
+//  ScheduleView.swift
 //  Study+
 //
 //  Created by Adam Mohsin on 14/02/2023.
@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct SubjectColumns: View {
+struct ScheduleView: View {
     @EnvironmentObject var theSubjects: SubjectCreate
     @State private var subjectKind: SubjectInfo?
     @Environment(\.scenePhase) private var scenePhase
    
-    
     var body: some View {
         NavigationStack {
             List {
@@ -25,8 +24,8 @@ struct SubjectColumns: View {
                                 Image(systemName: "trash")
                             }
                         }
+                    }
                 }
-            }
             .navigationTitle("Schedule")
             .sheet(item: $subjectKind) { $0 }
             .toolbar {
@@ -38,15 +37,10 @@ struct SubjectColumns: View {
                             .imageScale(.medium)
                     }
                 }
-                
             }
-            
         }
-  
-            
-        }
-        
     }
+}
     
 
 

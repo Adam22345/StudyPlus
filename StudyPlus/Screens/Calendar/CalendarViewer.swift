@@ -1,5 +1,5 @@
 //
-//  SubjectCalendar.swift
+//  CalendarViewer.swift
 //  Study+
 //
 //  Created by Adam Mohsin on 14/02/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SubjectCalendar: View {
+struct CalendarViewer: View {
     @EnvironmentObject var subjectCreate: SubjectCreate
     @State private var datePicked: DateComponents?
     @State private var showSubject = false
@@ -48,7 +48,7 @@ struct SubjectCalendar: View {
 
 struct EventsCalendarView_Previews: PreviewProvider {
     static var previews: some View {
-        SubjectCalendar()
+        CalendarViewer()
             .environmentObject(SubjectCreate(view: true))
     }
 }

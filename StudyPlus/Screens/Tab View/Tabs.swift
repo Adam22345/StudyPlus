@@ -1,5 +1,5 @@
 //
-//  ScheduleListScreen.swift
+//  Tabs.swift
 //  Study+
 //
 //  Created by Adam Mohsin on 06/02/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ScheduleListScreen: View {
+struct Tabs: View {
   
    
     @Binding var subjects: [CurrentSchedule]
@@ -19,16 +19,15 @@ struct ScheduleListScreen: View {
         TabView{
             
           
-            
-            ScheduleView(subjects: $store.subjects,saveAction:{})
+            NoteView(subjects: $store.subjects,saveAction:{})
                 .tabItem {
                     Label("Notes", systemImage: "note.text")
                 }
-            SubjectColumns()
+            ScheduleView()
                 .tabItem {
                     Label("Schedule", systemImage: "list.bullet")
                 }
-            SubjectCalendar()
+            CalendarViewer()
                 .tabItem {
                     Label("Calendar", systemImage: "calendar.circle")
                     

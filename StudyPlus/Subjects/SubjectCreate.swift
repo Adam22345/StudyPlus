@@ -25,7 +25,7 @@ class SubjectCreate: ObservableObject {
         if view {
             subjects = Subject.sampleSubjects
         } else {
-            // load from your persistence store
+            
         }
     }
     

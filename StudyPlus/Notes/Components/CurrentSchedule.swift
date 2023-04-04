@@ -7,27 +7,27 @@
 
 import Foundation
 
-struct CurrentSchedule: Identifiable, Codable {
+struct CurrentSchedule: Identifiable, Codable { // the body of the CurrentSchedule along with all variables
     let id: UUID
     var title: String
     var subjectNames: [SubjectName]
-    var lengthInMinutes: Int
+    var timeLeft: Int
     var subject: Subject1
     var timeLine: [Timeline] = []
    
     
-    init(id: UUID = UUID(), title: String  , subjectNames: [String], lengthInMinutes: Int, subject: Subject1) {
+    init(id: UUID = UUID(), title: String  , subjectNames: [String], timeLeft: Int, subject: Subject1) { //initialises all the methods for the variables
         self.id = id
         self.title = title
         self.subjectNames = subjectNames.map { SubjectName(name: $0) }
-        self.lengthInMinutes = lengthInMinutes
+        self.timeLeft = timeLeft
         self.subject = subject
 
     }
 }
 
 extension CurrentSchedule {
-    struct SubjectName: Identifiable, Codable {
+    struct SubjectName: Identifiable, Codable { // adding Identifiable, Codable
         let id: UUID
         var name: String
         
@@ -37,23 +37,23 @@ extension CurrentSchedule {
         }
     }
     
-    struct Data {
+    struct Data { // constructs data for the CurrentSchedule
         var title: String = ""
-        var attendees: [SubjectName] = []
-        var lengthInMinutes: Double = 5
+        var otherNotes: [SubjectName] = []
+        var timeLeft: Double = 5
         var subject: Subject1 = .generic
        
         
     }
     
     var data: Data {
-        Data(title: title, attendees: subjectNames, lengthInMinutes: Double(lengthInMinutes), subject: subject)
+        Data(title: title, otherNotes: subjectNames, timeLeft: Double(timeLeft), subject: subject)
     }
     
-    mutating func change(from data: Data) {
+    mutating func change(from data: Data) { // modifies the properties of Data
         title = data.title
-        subjectNames = data.attendees
-        lengthInMinutes = Int(data.lengthInMinutes)
+        subjectNames = data.otherNotes
+        timeLeft = Int(data.timeLeft)
         subject = data.subject
         
     }
@@ -61,8 +61,8 @@ extension CurrentSchedule {
     init(data: Data) {
         id = UUID()
         title = data.title
-        subjectNames = data.attendees
-        lengthInMinutes = Int(data.lengthInMinutes)
+        subjectNames = data.otherNotes
+        timeLeft = Int(data.timeLeft)
         subject = data.subject
   
     
@@ -72,6 +72,6 @@ extension CurrentSchedule {
 extension CurrentSchedule {
     static let sampleData: [CurrentSchedule] =
     [
-        CurrentSchedule(title: "",  subjectNames: [""], lengthInMinutes: 10, subject: .maths)
+        CurrentSchedule(title: "",  subjectNames: [""], timeLeft: 10, subject: .maths)
     ]
 }
