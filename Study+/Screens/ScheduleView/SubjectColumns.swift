@@ -48,16 +48,5 @@ struct SubjectColumns: View {
         
     }
     
-//    struct EventsListView_Previews: PreviewProvider {
-//        static var previews: some View {
-            
-//            SubjectColumns(subjects: .constant(Subject.sampleSubjects), saveAction:{})
-            
-            
-//                .environmentObject(SubjectColumns(view: true))
-//        }
-        
-        
- //   }
 
 

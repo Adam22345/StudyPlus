@@ -2,27 +2,10 @@
 //  Study_App.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 11/02/2023.
+//  Created by Adam Mohsin on 03/02/2023.
 //
 
 import SwiftUI
-
-
-enum Screen{
-    case calendar
-    case progress
-}
-
-final class manageTabs: ObservableObject {
-    
-    @Published var screen: Screen = .calendar
-    
-    
-    func change (to screen: Screen) {
-        self.screen = screen
-    }
-}
-
 //App is executed here
 @main
 //This code is the main point of entry of the App
@@ -46,8 +29,7 @@ struct Study: App {
                     }
                 }
             }
-           
-            //code for error handling
+           //code for error handling
            .onAppear {
                 SubjectStorage.load { result in
                     switch result {
@@ -57,8 +39,6 @@ struct Study: App {
                         store.subjects = subjects
                     }
                 }
-                
-                
             }
         }
     }

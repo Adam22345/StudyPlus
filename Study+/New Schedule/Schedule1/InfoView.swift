@@ -1,6 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
+//
+//  InfoView.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 18/02/2023.
+//
 
 import SwiftUI
 
@@ -11,29 +14,7 @@ struct InfoView: View {
     @State private var showInfoView = false
     
     var body: some View {
-        List {
-          
-            Section(header: Text("Attendees")) {
-                ForEach(subject.subjectNames) { subjectNames in
-                    Label(subjectNames.name, systemImage: "person")
-                }
-            }
-            
-          
-            
-            
-            Section(header: Text("Timeline")) {
-                if subject.timeLine.isEmpty {
-                    Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
-                }
-                ForEach(subject.timeLine) { timeline in
-                    HStack {
-                        Image(systemName: "calendar")
-                        Text(timeline.date, style: .date)
-                    }
-                }
-            }
-        }
+        List {}
         .navigationTitle(subject.title)
         .toolbar {
             Button("Edit") {
@@ -70,3 +51,4 @@ struct DetailView_Previews: PreviewProvider {
         }
     }
 }
+

@@ -1,7 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
-
+//
+//  Subject1.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 18/02/2023.
+//
 import SwiftUI
 
 enum Subject1: String, CaseIterable, Identifiable, Codable {

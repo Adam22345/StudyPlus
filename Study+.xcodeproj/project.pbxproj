@@ -15,8 +15,6 @@
 		66440E20299BC296002DCF03 /* Study_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E1F299BC296002DCF03 /* Study_Tests.swift */; };
 		66440E2A299BC296002DCF03 /* Study_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E29299BC296002DCF03 /* Study_UITests.swift */; };
 		66440E2C299BC296002DCF03 /* Study_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E2B299BC296002DCF03 /* Study_UITestsLaunchTests.swift */; };
-		66440E39299BC41A002DCF03 /* CalendarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E38299BC41A002DCF03 /* CalendarScreen.swift */; };
-		66440E3B299BC458002DCF03 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E3A299BC458002DCF03 /* ProgressScreen.swift */; };
 		66440E3F299BD56E002DCF03 /* ScheduleListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */; };
 		66440E42299BD9EC002DCF03 /* SubjectCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E41299BD9EC002DCF03 /* SubjectCreate.swift */; };
 		66440E46299BE178002DCF03 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E45299BE178002DCF03 /* Subject.swift */; };
@@ -32,7 +30,6 @@
 		66440EA0299C2660002DCF03 /* CalendarPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440E9F299C2660002DCF03 /* CalendarPage.swift */; };
 		66440EA2299C2AD4002DCF03 /* SubjectDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66440EA1299C2AD4002DCF03 /* SubjectDay.swift */; };
 		66440EAA299C3DE2002DCF03 /* StartScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */; };
-		664C7F5F299FCFFF00C218C5 /* Progress Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664C7F5E299FCFFF00C218C5 /* Progress Screen.swift */; };
 		66670CEE29A404A0009720A3 /* SubjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66670CED29A404A0009720A3 /* SubjectStore.swift */; };
 		6676326429A25FE300A27DB9 /* StudyOrganiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6676326329A25FE300A27DB9 /* StudyOrganiser.swift */; };
 		66D2D39629A5448F0011D820 /* SubjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2D39229A5448E0011D820 /* SubjectStorage.swift */; };
@@ -76,8 +73,6 @@
 		66440E25299BC296002DCF03 /* Study+UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Study+UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66440E29299BC296002DCF03 /* Study_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_UITests.swift; sourceTree = "<group>"; };
 		66440E2B299BC296002DCF03 /* Study_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study_UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		66440E38299BC41A002DCF03 /* CalendarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScreen.swift; sourceTree = "<group>"; };
-		66440E3A299BC458002DCF03 /* ProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressScreen.swift; sourceTree = "<group>"; };
 		66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListScreen.swift; sourceTree = "<group>"; };
 		66440E41299BD9EC002DCF03 /* SubjectCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectCreate.swift; sourceTree = "<group>"; };
 		66440E45299BE178002DCF03 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
@@ -93,7 +88,6 @@
 		66440E9F299C2660002DCF03 /* CalendarPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPage.swift; sourceTree = "<group>"; };
 		66440EA1299C2AD4002DCF03 /* SubjectDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDay.swift; sourceTree = "<group>"; };
 		66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartScreen.storyboard; sourceTree = "<group>"; };
-		664C7F5E299FCFFF00C218C5 /* Progress Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress Screen.swift"; sourceTree = "<group>"; };
 		66670CED29A404A0009720A3 /* SubjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectStore.swift; sourceTree = "<group>"; };
 		6676326329A25FE300A27DB9 /* StudyOrganiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyOrganiser.swift; sourceTree = "<group>"; };
 		66D2D39229A5448E0011D820 /* SubjectStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectStorage.swift; sourceTree = "<group>"; };
@@ -207,14 +201,10 @@
 		66440E3D299BD08B002DCF03 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */,
-				66440E3A299BC458002DCF03 /* ProgressScreen.swift */,
-				66440E38299BC41A002DCF03 /* CalendarScreen.swift */,
 				66440E87299BFCBF002DCF03 /* ScheduleView */,
 				66440E9A299C1F32002DCF03 /* Tab View */,
 				66440E97299C1B74002DCF03 /* Calendar */,
 				66440E8C299BFDD7002DCF03 /* UpdateSchedule */,
-				664C7F5E299FCFFF00C218C5 /* Progress Screen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -269,6 +259,7 @@
 		66440E9A299C1F32002DCF03 /* Tab View */ = {
 			isa = PBXGroup;
 			children = (
+				66440E3E299BD56E002DCF03 /* ScheduleListScreen.swift */,
 				66440E9B299C1F66002DCF03 /* SubjectList.swift */,
 				66440E9D299C20D7002DCF03 /* SubjectRow.swift */,
 			);
@@ -450,17 +441,14 @@
 				66D2D3A029A544BD0011D820 /* SubjectView1.swift in Sources */,
 				66440E3F299BD56E002DCF03 /* ScheduleListScreen.swift in Sources */,
 				66440E86299BF9B6002DCF03 /* DateExtra.swift in Sources */,
-				66440E3B299BC458002DCF03 /* ProgressScreen.swift in Sources */,
 				66440E8B299BFD5C002DCF03 /* SubjectHeading.swift in Sources */,
 				66108DEA299D5FE100A0A4CF /* TimeTracker.swift in Sources */,
 				66440E92299C0119002DCF03 /* SubjectStructure.swift in Sources */,
-				66440E39299BC41A002DCF03 /* CalendarScreen.swift in Sources */,
 				66D2D3A529A544BD0011D820 /* InfoView.swift in Sources */,
 				66D2D39929A5448F0011D820 /* Subject1.swift in Sources */,
 				66D2D39829A5448F0011D820 /* CurrentSchedule.swift in Sources */,
 				6676326429A25FE300A27DB9 /* StudyOrganiser.swift in Sources */,
 				66440E0F299BC292002DCF03 /* Study_App.swift in Sources */,
-				664C7F5F299FCFFF00C218C5 /* Progress Screen.swift in Sources */,
 				66440E9E299C20D7002DCF03 /* SubjectRow.swift in Sources */,
 				66108DE8299D5CAE00A0A4CF /* StudyTimer.swift in Sources */,
 				66D2D3A329A544BD0011D820 /* EmojiPicker.swift in Sources */,

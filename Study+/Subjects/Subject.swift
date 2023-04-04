@@ -2,7 +2,7 @@
 //  Subject.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  Created by Adam Mohsin on 13/02/2023.
 //
 
 import Foundation
@@ -31,7 +31,7 @@ struct Subject: Identifiable, Codable{
             }
         }
         
-}
+    }
     
     
     var subjectKind: SubjectKind
@@ -41,7 +41,7 @@ struct Subject: Identifiable, Codable{
     
     
     
-   
+    
     
     var dateComponents: DateComponents {
         var dateComponents = Calendar.current.dateComponents(
@@ -68,32 +68,14 @@ struct Subject: Identifiable, Codable{
     static var sampleSubjects:[Subject] {
         
         return [
-        
+            
             Subject(subjectKind: .science, date: Date().diff(numDays: 3), note: "Complete Formulas"),
             Subject(subjectKind: .maths, date: Date().diff(numDays: 5), note: "Check Calculations"),
             Subject(subjectKind: .computer, date: Date().diff(numDays: 8), note: "Start Progarmming work"),
             Subject(subjectKind: .english, date: Date().diff(numDays: 10), note: "Look Up Definitions"),
             Subject(subjectKind: .generic, date: Date().diff(numDays: 11), note: "Organise Notes")
             
-            
-            
-        
-        
-        
-        
         ]
-        
-        
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
-

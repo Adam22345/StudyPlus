@@ -2,7 +2,7 @@
 //  ScheduleListScreen.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  Created by Adam Mohsin on 06/02/2023.
 //
 
 import SwiftUI
@@ -22,11 +22,11 @@ struct ScheduleListScreen: View {
             
             ScheduleView(subjects: $store.subjects,saveAction:{})
                 .tabItem {
-                    Label("Schedule", systemImage: "list.clipboard")
+                    Label("Notes", systemImage: "note.text")
                 }
             SubjectColumns()
                 .tabItem {
-                    Label("List", systemImage: "list.bullet")
+                    Label("Schedule", systemImage: "list.bullet")
                 }
             SubjectCalendar()
                 .tabItem {
@@ -50,11 +50,3 @@ struct ScheduleListScreen: View {
    }
     
 
-//struct StartTabView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        NavigationView{
-//            ScheduleListScreen(subjects: .constant(Subject.sampleSubjects) ,saveAction:{})
- //               .environmentObject(SubjectCreate(view: true))
-       // }
- //   }
-//}

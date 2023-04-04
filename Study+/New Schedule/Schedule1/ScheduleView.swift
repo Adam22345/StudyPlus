@@ -1,7 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
-
+//
+//  ScheduleView.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 18/02/2023.
+//
 import SwiftUI
 
 struct ScheduleView: View {
@@ -14,10 +16,6 @@ struct ScheduleView: View {
     var body: some View {
         NavigationStack{
             
-            Text("Tilt Phone To side to View Schedule ")
-            
-            
-            
             List {
                 ForEach($subjects) { $subject in
                     NavigationLink(destination: InfoView(subject: $subject)) {
@@ -29,7 +27,7 @@ struct ScheduleView: View {
             }
             
             
-            .navigationTitle("Schedule")
+            .navigationTitle("Notes")
             
             .toolbar {
                 Button(action: {
@@ -37,7 +35,7 @@ struct ScheduleView: View {
                 }) {
                     Image(systemName: "plus.circle.fill")
                 }
-                .accessibilityLabel("New Subject")
+                .accessibilityLabel("New Note")
             }
             
             .sheet(isPresented: $isPresentingNewScrumView) {

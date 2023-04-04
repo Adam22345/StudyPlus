@@ -2,7 +2,7 @@
 //  SubjectHeading.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  Created by Adam Mohsin on 09/02/2023.
 //
 
 import SwiftUI
@@ -34,9 +34,4 @@ struct SubjectHeading: View {
     }
 }
 
-// struct ListViewRow_Previews: PreviewProvider {
-  //   static let subject = Subject(eventType: .maths, date: Date(), note: "Let's party")
-    //static var previews: some View: some View {
-      //  ListViewRow(event: subject, subjectKind: .constant(.new))
-    //}
- //}
+

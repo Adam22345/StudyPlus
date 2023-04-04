@@ -1,8 +1,9 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
-
-
+//
+//  SymbolView.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 18/02/2023.
+//
 
 import SwiftUI
 

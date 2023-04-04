@@ -1,64 +1,24 @@
-/*
-See LICENSE folder for this sample’s licensing information.
-*/
-
+//
+//  InfoEditView.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 18/02/2023.
+//
 import SwiftUI
-
+//code which allows user to edit Notes 
 struct InfoEditView: View {
     @Binding var data: CurrentSchedule.Data
-    @State private var newSubjectName = ""
+    @State private var newSubjectName = "" //takes user input
     
     
     var body: some View {
         Form {
-            Section(header: Text("Schedule Details")) {
-                TextField("Title", text: $data.title)
-                HStack {
-                    Slider(value: $data.lengthInMinutes, in: 5...30, step: 1) {
-                        Text("Length")
+            Section(header: Text("Note Details")) {
+                TextField("Note", text: $data.title) //titles for the edit view of the notes
+                EmojiPicker(selection: $data.subject) //uses the emoji picker
                     }
-                    .accessibilityValue("\(Int(data.lengthInMinutes)) minutes")
-                    Spacer()
-                    Text("\(Int(data.lengthInMinutes)) minutes")
-                        .accessibilityHidden(true)
-                    
-                            
-                    
-                }
-                EmojiPicker(selection: $data.subject)
-                
-                
-                
-       
-            }
             
-            
-            
-            
-            
-            
-            Section(header: Text("Attendees")) {
-                ForEach(data.attendees) { attendee in
-                    Text(attendee.name)
-                }
-                .onDelete { indices in
-                    data.attendees.remove(atOffsets: indices)
-                }
-                HStack {
-                    TextField("New Attendee", text: $newSubjectName)
-                    Button(action: {
-                        withAnimation {
-                            let attendee = CurrentSchedule.SubjectName(name: newSubjectName)
-                            data.attendees.append(attendee)
-                            newSubjectName = ""
-                        }
-                    }) {
-                        Image(systemName: "plus.circle.fill")
-                            .accessibilityLabel("Add attendee")
-                    }
-                    .disabled(newSubjectName.isEmpty)
-                }
-            }
+           
         }
     }
 }

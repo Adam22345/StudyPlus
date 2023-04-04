@@ -2,7 +2,10 @@
 //  SubjectRow.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  SubjectRow.swift
+//  Study+
+//
+//  Created by Adam Mohsin on 08/02/2023.
 //
 
 import SwiftUI

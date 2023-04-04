@@ -2,7 +2,7 @@
 //  SubjectStore.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 20/02/2023.
+//  Created by Adam Mohsin on 19/02/2023.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  SubjectList.swift
 //  Study+
 //
-//  Created by Adam Mohsin on 14/02/2023.
+//  Created by Adam Mohsin on 09/02/2023.
 //
 
 import SwiftUI
