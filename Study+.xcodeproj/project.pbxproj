@@ -147,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				66440E0D299BC292002DCF03 /* Study+ */,
-				66440E84299BF96E002DCF03 /* Extra */,
 				66440E1E299BC296002DCF03 /* Study+Tests */,
 				66440E28299BC296002DCF03 /* Study+UITests */,
 				66440E0C299BC292002DCF03 /* Products */,
@@ -172,9 +171,10 @@
 				66440E40299BD93F002DCF03 /* Subjects */,
 				66440E3D299BD08B002DCF03 /* Screens */,
 				66108DE4299D5C7300A0A4CF /* Study Timer */,
+				66440E84299BF96E002DCF03 /* Extra */,
+				66440E14299BC296002DCF03 /* Preview Content */,
 				66440E12299BC296002DCF03 /* Assets.xcassets */,
 				66440EA9299C3DE2002DCF03 /* StartScreen.storyboard */,
-				66440E14299BC296002DCF03 /* Preview Content */,
 			);
 			path = "Study+";
 			sourceTree = "<group>";
