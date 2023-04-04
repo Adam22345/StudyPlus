@@ -2,9 +2,6 @@
 //  SubjectRow.swift
 //  Study+
 //
-//  SubjectRow.swift
-//  Study+
-//
 //  Created by Adam Mohsin on 08/02/2023.
 //
 
@@ -38,7 +35,7 @@ struct SubjectRow: View {
 }
 
  struct ListViewRow_Previews: PreviewProvider {
-     static let subject = Subject(subjectKind: .maths, date: Date(), note: "Let's party")
+     static let subject = Subject(subjectKind: .maths, date: Date(), note: "study for exam")
     static var previews: some View {
         SubjectRow(subject: subject, subjectType: .constant(.new))
     }
